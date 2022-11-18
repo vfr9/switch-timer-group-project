@@ -13,6 +13,7 @@ load_dotenv(find_dotenv())  # This is to load your API keys from .env
 
 
 
+
 @app.route("/")
 def index():
    
@@ -22,6 +23,29 @@ def index():
         "index.html"
        
     )  # passing some variables into the template
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
