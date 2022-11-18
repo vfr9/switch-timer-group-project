@@ -4,61 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
     <title>Switch Timer</title>
 </head>
 <body>
-    <div class="mainContent">
-        <div class = "header">
-           <h1>Switch Timer</h1>
-        </div>
-        
-    
-            <div class="text-center">
-              
-              <div class="container-fluid row"> 
-              
-              <div class="row">
-                <!-- Start main part -->
-                <div class="row top-row">
-                  <div class="col-xs-6 text-primary">
-                    <h3>Break</h3>
-                  </div>
-                  <div class="col-xs-6 text-primary">
-                    <h3>Session</h3>
-                  </div>
-                </div>
-                
-                <!-- buttons -->
-                <div class="row">
-                  <div class="col-xs-6">
-                    <button type="button" class="btn btn-link btn-sm" id="minus">-</button>
-                    <button type="button" class="btn btn-link btn-lg" id="break-time">5</button>
-                    <button type="button" class="btn btn-link btn-sm" id="plus">+</button>
-                  </div>
-                  
-                  <div class="col-xs-6">
-                    <button type="button" class="btn btn-link btn-sm" id="minus2">-</button>
-                    <button type="button" class="btn btn-link btn-lg" id="work-time">25</button>
-                    <button type="button" class="btn btn-link btn-sm" id="plus2">+</button>
-                  </div>
-                </div>
-                
-                <!-- Work and Bubble animation -->
-                <div class="row top-row">
-                <!--  <h3 id="status">Work!!</h3>-->
-                  <canvas id="progress"></canvas>
-                  <div id="timer"></div>
-                </div>
-                
-                <div class="row top-row">
-                  <button type="button" class="btn btn-link" id="start">Start</button>
-                  <button type="button" class="btn btn-link" id="pause">Pause</button>
-                  <button type="button" class="btn btn-link" id="reset">Reset</button>
-                </div>
-                <!-- end main part -->
-              </div>   
-            </div> <!-- end class text-center --> 
+  <div class = "header">
+    <h1>Switch Timer</h1>
+ </div>
+ 
+
+
+ <div class="mainContainer">
+  <div class="container">
+    <div class="glass">
+      <div class="modeSelector">
+        <button
+          class="modeSelector__Button active"
+          id="pomodoroButton"
+          data-mode="pomodoro"
+        >
+          Pomodoro
+        </button>
+        <button
+          class="modeSelector__Button"
+          id="shortButton"
+          data-mode="short"
+        >
+          Short Break
+        </button>
+        <button
+          class="modeSelector__Button"
+          id="longButton"
+          data-mode="long"
+        >
+          Long Break
+        </button>
+      </div>
+      <div class="timerControl">
+        <!-- <i class="fa fa-refresh" id="restart" aria-hidden="true"></i> -->
+        <i
+          class="fa fa-play"
+          id="toggle"
+          data-paused="true"
+          aria-hidden="true"
+        ></i>
+        <!-- <i class="fa fa-pause" id="pause" aria-hidden="true"></i> -->
+        <!-- <i class="fa fa-stop" aria-hidden="true"></i> -->
+      </div>
+    </div>
+    <h1 class="timer" id="timer" data-mode="pomodoro">25:00</h1>
+  </div>
+</div>
 
 
 
@@ -73,7 +73,14 @@
 
 
 
-        </div>
+
+
+
+
+
+
+
+
 
        
         <footer class="footer">
@@ -84,6 +91,7 @@
 
 
 
+        <script src="{{url_for('static', filename='timer.js')}}"></script>
 
 
 
