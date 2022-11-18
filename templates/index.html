@@ -8,11 +8,73 @@
     <title>Switch Timer</title>
 </head>
 <body>
- 
+    <div class="mainContent">
         <div class = "header">
            <h1>Switch Timer</h1>
         </div>
         
+    
+            <div class="text-center">
+              
+              <div class="container-fluid row"> 
+              
+              <div class="row">
+                <!-- Start main part -->
+                <div class="row top-row">
+                  <div class="col-xs-6 text-primary">
+                    <h3>Break</h3>
+                  </div>
+                  <div class="col-xs-6 text-primary">
+                    <h3>Session</h3>
+                  </div>
+                </div>
+                
+                <!-- buttons -->
+                <div class="row">
+                  <div class="col-xs-6">
+                    <button type="button" class="btn btn-link btn-sm" id="minus">-</button>
+                    <button type="button" class="btn btn-link btn-lg" id="break-time">5</button>
+                    <button type="button" class="btn btn-link btn-sm" id="plus">+</button>
+                  </div>
+                  
+                  <div class="col-xs-6">
+                    <button type="button" class="btn btn-link btn-sm" id="minus2">-</button>
+                    <button type="button" class="btn btn-link btn-lg" id="work-time">25</button>
+                    <button type="button" class="btn btn-link btn-sm" id="plus2">+</button>
+                  </div>
+                </div>
+                
+                <!-- Work and Bubble animation -->
+                <div class="row top-row">
+                <!--  <h3 id="status">Work!!</h3>-->
+                  <canvas id="progress"></canvas>
+                  <div id="timer"></div>
+                </div>
+                
+                <div class="row top-row">
+                  <button type="button" class="btn btn-link" id="start">Start</button>
+                  <button type="button" class="btn btn-link" id="pause">Pause</button>
+                  <button type="button" class="btn btn-link" id="reset">Reset</button>
+                </div>
+                <!-- end main part -->
+              </div>   
+            </div> <!-- end class text-center --> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
        
         <footer class="footer">
            <h2>&copy; Copyright Switch Timer</h2>

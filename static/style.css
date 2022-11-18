@@ -12,7 +12,6 @@ body {
 }
 
 
-
 .header,
 .footer {
 	background-color: navy;
@@ -47,12 +46,7 @@ body {
 }
 
 
-/*centers content*/
-.mainContent {
-	padding-top: 100px;
-	text-align: center;
 
-}
 
 
 .button {
@@ -68,3 +62,11 @@ body {
 	cursor: pointer;
 
 }
+
+ 
+  
+  .btn{color: blueviolet;}
+  .btn:hover{color: orange; text-decoration: none;}
+
+  
+	

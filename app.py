@@ -26,6 +26,29 @@ def index():
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 app.run(
     debug=True
 )  # I will not need to reload the page each time I make changes with the debug=True
