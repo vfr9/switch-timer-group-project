@@ -44,8 +44,8 @@ def break_screen():
 
 @app.route("/")
 def index():
-    #return flask.render_template("index.html")  # passing some variables into the template
-    return flask.redirect(flask.url_for("break_screen"))
+    return flask.render_template("index.html")  #main page
+    #return flask.redirect(flask.url_for("break_screen")) #break page
 
 
 app.run(
