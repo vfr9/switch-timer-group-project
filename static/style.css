@@ -208,3 +208,41 @@ body {
 }
 
 
+.square-background{
+	height: 500px;
+	width: 500px;
+	background-color:lightblue;
+	text-align: center;
+	display:inline block;
+	border-radius: 10%;
+	margin: auto;
+    border: 2px solid purple;
+	position: relative;
+	top: 850px;
+	
+}
+
+.green-tile-add-button{
+		background-color: #1c87c9;
+		border: none;
+		color: white;
+		padding: 20px 34px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		margin: 4px 160px;
+		cursor: pointer;
+		border-radius: 50%;
+		border: 2px solid purple;
+		position: relative;
+		top: 820px;
+	
+	
+
+		
+
+
+		
+	
+	}
