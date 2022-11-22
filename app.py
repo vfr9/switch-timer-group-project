@@ -42,6 +42,10 @@ def break_screen():
         image = image_url
     )
 
+@app.route("/work")
+def work_screen():
+    return flask.render_template("work.html")
+
 @app.route("/")
 def index():
     return flask.render_template("index.html")  #main page

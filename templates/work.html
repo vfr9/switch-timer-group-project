@@ -1,10 +1,13 @@
 <html>
     <head>
-        WORK TIME
+        <link rel="stylesheet" href="{{ url_for('static',filename='work_style.css') }}" type"text/css">
     </head>
     <body>
-        <h1>Tasks:<br></h1>
-        <h2>
+        <div class = "header">
+            <h1>Break Time</h1>
+         </div>
+        <h3>Tasks:<br></h3>
+        <h4>
             <label for="checkc1">Task 1:</label>
             <input type="checkbox" id="checkc1" name="checkc1">
             <input type="text" id="checkt1" name="checkt1" placeholder="Enter task here..."><br>
@@ -14,6 +17,10 @@
             <label for="checkc3">Task 3:</label>
             <input type="checkbox" id="checkc3" name="checkc3">
             <input type="text" id="checkt3" name="checkt3" placeholder="Enter task here..."><br>
-        </h2>
+        </h4>
+
+        <footer class = "footer">
+            <h2>&copy; Copyright Switch Timer</h2>
+         </footer>
     </body>
 </html>
