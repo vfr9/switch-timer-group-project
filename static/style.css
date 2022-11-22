@@ -229,14 +229,14 @@ body {
 		padding: 20px 34px;
 		text-align: center;
 		text-decoration: none;
-		display: inline-block;
+		display: inline block;
 		font-size: 20px;
-		margin: 4px 160px;
+	    margin: 40px 460px;
 		cursor: pointer;
 		border-radius: 50%;
 		border: 2px solid purple;
 		position: relative;
-		top: 820px;
+		top: 840px;
 	
 	
 
