@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <title>Switch Timer</title>
+</head>
+<body>
+  <header class="header">
+    <h1>Productivity Switch Timer </h1>
+    
+ </header>
+
+ <div class="mainContainer">
+  <div class="container">
+    <div class="glass">
+    
+
+      <div class="timerControl">
+
+
+   </div>
+  
+  </div>
+   
+ <div id="container" class="timer" id="timer" data-mode="pomodoro">
+  <p id="work" class="label modeSelector__Button active">Work:</p>
+  <p id="cycles" class="label modeSelector__Button active">Session:</p>
+  <!--Work Timer-->
+  <div id="work-timer" class="timer">
+      <p id="w_minutes">25</p><p class="semicolon">:</p><p id="w_seconds">00</p>
+  </div>
+
+
+  <p id="counter" class="timer">0</p>
+
+   
+  
+  <button id="start" class="ButtonContainer btn">Start</button>
+  <button id="reset" class="ButtonContainer btn">Reset</button>
+  <button id="stop" class="ButtonContainer btn">Pause</button>
+
+
+</div>
+
+
+<!--Will have the innerhtml change here for the break session-->
+<!-- 
+  
+  
+  
+  <div id="container" class="timer" id="timer" data-mode="pomodoro">
+  <p id="work" class="label modeSelector__Button active">Work:</p><p id="break" class="label modeSelector__Button active">Break:</p><p id="cycles" class="label modeSelector__Button active">Session:</p> 
+ 
+  <div id="work-timer" class="timer">
+    <p id="w_minutes">25</p><p class="semicolon">:</p><p id="w_seconds">00</p>
+</div>
+
+
+<p id="counter" class="timer">0</p>
+
+
+<div id="break-timer" class="timer">
+    <p id="b_minutes">05</p><p class="semicolon">:</p><p id="b_seconds">00</p>
+</div>
+<button id="start" class="btn">Start</button>
+<button id="stop" class="btn">Pause</button>
+<button id="reset" class="btn">Reset</button>
+</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+<!-- 
+<div class="green-tile-add-button" >
+  <a href= '#'> Break is over! Click here to start next work session!</a> 
+  <p> Hurry before 5 minutes are up or else a green tile will be lost! </p> 
+  <p> Counter: 5:00 minutes left! </p>
+ -->   
+  
+  <!--Have this part count down-->
+
+<!-- 
+</div>
+-->
+
+
+<div class="checklist square-background">
+    <h1>Checklist Tasks:<br></h1>
+    <h2>
+        <label for="checkc1">Task 1:</label>
+        <input type="checkbox" id="checkc1" name="checkc1">
+        <input type="text" id="checkt1" name="checkt1" placeholder="Enter task here..."><br>
+        <label for="checkc2">Task 2:</label>
+        <input type="checkbox" id="checkc2" name="checkc2">
+        <input type="text" id="checkt2" name="checkt2" placeholder="Enter task here..."><br>
+        <label for="checkc3">Task 3:</label>
+        <input type="checkbox" id="checkc3" name="checkc3">
+        <input type="text" id="checkt3" name="checkt3" placeholder="Enter task here..."><br>
+    </h2>
+
+  </div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+        <footer class="footer">
+           <h2>&copy; Copyright Switch Timer</h2>
+        </footer>
+     
+
+
+
+
+        <script src="{{url_for('static', filename='timer.js')}}"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
