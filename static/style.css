@@ -1,5 +1,7 @@
 
 
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -61,8 +63,7 @@ body {
 	font-family: helvetica;
   }
   
-
-    .container {
+  .container {
 	font-family: helvetica;
 	position: absolute;
 	display: flex;
@@ -81,7 +82,7 @@ body {
 	font-size: 10vw;
 	text-align: center;
   }
-
+  
   .glass {
 	display: flex;
 	padding-top: 100px;
@@ -212,7 +213,7 @@ body {
 	margin: auto;
     border: 2px solid purple;
 	position: relative;
-	top: 850px;
+	top: 400px;
 	
 }
 
