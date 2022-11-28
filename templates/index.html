@@ -12,70 +12,98 @@
     <title>Switch Timer</title>
 </head>
 <body>
-  <!--This is the homepage / work page-->
-  <div class = "header">
-    <h1>Switch Timer</h1>
- </div>
- 
- 
+  <header class="header">
+    <h1>Productivity Switch Timer </h1>
+    
+ </header>
 
  <div class="mainContainer">
   <div class="container">
     <div class="glass">
-      <div class="modeSelector">
-        <button
-          class="modeSelector__Button active"
-          id="pomodoroButton"
-          data-mode="pomodoro"
-         
-        >
-          Pomodoro
-        </button>
-        <button
-          class="modeSelector__Button active"
-          id="shortButton"
-          data-mode="short"
-          
-        >
-          Short Break
-        </button>
-        <button
-          class="modeSelector__Button active"
-          id="longButton"
-          data-mode="long"
-          
-        >
-          Long Break
-        </button>
-      </div>
+    
+
       <div class="timerControl">
-        <!-- <i class="fa fa-refresh" id="restart" aria-hidden="true"></i> -->
-        <i
-          class="fa fa-play"
-          id="toggle"
-          data-paused="true"
-          aria-hidden="true"
-        ></i>
-        <!-- <i class="fa fa-pause" id="pause" aria-hidden="true"></i> -->
-        <!-- <i class="fa fa-stop" aria-hidden="true"></i> -->
-      </div>
-    </div>
-    <h1 class="timer" id="timer" data-mode="pomodoro">25:00</h1>
+
+
+   </div>
+  
+  </div>
+   
+ <div id="container" class="timer" id="timer" data-mode="pomodoro">
+  <p id="work" class="label modeSelector__Button active">Work:</p>
+  <p id="cycles" class="label modeSelector__Button active">Session:</p>
+  <!--Work Timer-->
+  <div id="work-timer" class="timer">
+      <p id="w_minutes">25</p><p class="semicolon">:</p><p id="w_seconds">00</p>
   </div>
 
 
+  <p id="counter" class="timer">0</p>
 
-<div class="green-tile-add-button" >
-  <a href= '#'> Break is over! Click here to start next work session!</a> 
-  <p> Hurry before 5 minutes are up or else a green tile will be lost! </p> 
-  <p> Counter: 5:00 minutes left! </p><!--Have this part count down-->
+   
+  
+  <button id="start" class="ButtonContainer btn">Start</button>
+  <button id="reset" class="ButtonContainer btn">Reset</button>
+  <button id="stop" class="ButtonContainer btn">Pause</button>
+
 
 </div>
 
 
+<!--Will have the innerhtml change here for the break session-->
+<!-- 
+  
+  
+  
+  <div id="container" class="timer" id="timer" data-mode="pomodoro">
+  <p id="work" class="label modeSelector__Button active">Work:</p><p id="break" class="label modeSelector__Button active">Break:</p><p id="cycles" class="label modeSelector__Button active">Session:</p> 
+ 
+  <div id="work-timer" class="timer">
+    <p id="w_minutes">25</p><p class="semicolon">:</p><p id="w_seconds">00</p>
+</div>
+
+
+<p id="counter" class="timer">0</p>
+
+
+<div id="break-timer" class="timer">
+    <p id="b_minutes">05</p><p class="semicolon">:</p><p id="b_seconds">00</p>
+</div>
+<button id="start" class="btn">Start</button>
+<button id="stop" class="btn">Pause</button>
+<button id="reset" class="btn">Reset</button>
+</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+<!-- 
+<div class="green-tile-add-button" >
+  <a href= '#'> Break is over! Click here to start next work session!</a> 
+  <p> Hurry before 5 minutes are up or else a green tile will be lost! </p> 
+  <p> Counter: 5:00 minutes left! </p>
+ -->   
+  
+  <!--Have this part count down-->
+
+<!-- 
+</div>
+-->
+
 
 <div class="checklist square-background">
-    <h1>Session Tasks:<br></h1>
+    <h1>Checklist Tasks:<br></h1>
     <h2>
         <label for="checkc1">Task 1:</label>
         <input type="checkbox" id="checkc1" name="checkc1">
@@ -90,40 +118,7 @@
 
   </div>
 
-  <br>
-  <br>
-  <br>
-  <br>
  
-
-  <div class="square-background">
-         
-    <form>
-       <h4><b><u>Decide what you would like to do after your work session!</u></b></h4>
-       <br>
-       <label for="linkURL">link to change to:</label><br>
-       <input type="text" id="linkURL" name="linkURL" value="{{link_URL}}"><br>
-
-
-       <input type="submit" value="Submit" class="submit-button">
-
-     </form> 
-
-
-  
-
-
-
-
-
-
-
-
-  <!--<a href="/templates/break.html" class="break-button"> Click here to start break! </a>-->
-  
-
-</div>
-
 
 
 
