@@ -216,6 +216,23 @@ body {
 	
 }
 
+
+
+.form-square-background{
+	height: 500px;
+	width: 500px;
+	background-color:lightblue;
+	text-align: center;
+	display:inline block;
+	border-radius: 10%;
+	margin: auto;
+    border: 2px solid purple;
+	position: relative;
+	top: 400px;
+	
+}
+
+
 .green-tile-add-button{
 		background-color: #1c87c9;
 		border: none;
@@ -319,7 +336,14 @@ body {
 		grid-area: 3 / 4 / 3 / 4;
 		width: 100px;
 	}
-		
+
+	#begin-app{
+		grid-area: 3 ;
+		width: 700px;
+		align-self: center;
+		text-decoration: none;
+	}
+	
 
 
 	/*buttons*/
@@ -356,10 +380,8 @@ body {
 .ButtonContainer {
     display: block;
     width: 100%;
-	
 	height: 50px;
     overflow: auto;
-  
     line-height: 0;
     vertical-align: top;
     padding: 10px 0;
@@ -377,12 +399,71 @@ body {
 
 
 
+/*Navigation Bar*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	background-color: navy;
+  }
+  
+  li {
+	   float:right;
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+	background-color: #111;
+  }
+  
+  .active {
+	/*background-color: #04AA6D;*/
+  }
+  li {
+	border-right: 1px solid #bbb;
+  }
+  
+/*Adds Underline Effect*/
+.hover-underline-animation {
+	display: inline-block;
+	position: relative;
+	color: #0087ca;
+  }
+  
+  .hover-underline-animation:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #0087ca;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+  }
 
+/*break page styling*/
+.break-activity{
+	top: 850px;
+}
 
-
-
-
-
+.BBimage img{
+	top: 900px;
+}
 
 	
 
