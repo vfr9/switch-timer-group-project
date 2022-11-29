@@ -343,7 +343,7 @@ body {
 		align-self: center;
 		text-decoration: none;
 	}
-		
+	
 
 
 	/*buttons*/
@@ -399,12 +399,71 @@ body {
 
 
 
+/*Navigation Bar*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	background-color: navy;
+  }
+  
+  li {
+	   float:right;
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+	background-color: #111;
+  }
+  
+  .active {
+	/*background-color: #04AA6D;*/
+  }
+  li {
+	border-right: 1px solid #bbb;
+  }
+  
+/*Adds Underline Effect*/
+.hover-underline-animation {
+	display: inline-block;
+	position: relative;
+	color: #0087ca;
+  }
+  
+  .hover-underline-animation:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #0087ca;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+  }
 
+/*break page styling*/
+.break-activity{
+	top: 850px;
+}
 
-
-
-
-
+.BBimage img{
+	top: 900px;
+}
 
 	
 

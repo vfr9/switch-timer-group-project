@@ -8,14 +8,31 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+   
     <title>Switch Timer</title>
 </head>
 <body>
-  <header class="header">
-    <h1>Productivity Switch Timer </h1>
-    
+
+    <ul>
+
+
+    <h1 style="display:inline;">Productivity Switch Timer </h1>
+    <li><a href=./templates/work>Work</a></li>
+    <li><a href=./templates/break>Break</a></li>
+    <li><a href=./templates/index>Home</a></li>
+      
+    </ul>
+  </h1>
  </header>
+
+
+
+
+
+
 
  <div class="mainContainer">
   <div class="container">
@@ -36,6 +53,13 @@
   <div id="work-timer" class="timer">
       <p id="w_minutes">25</p><p class="semicolon">:</p><p id="w_seconds">00</p>
   </div>
+
+
+
+
+  <!-- Test for ring audio
+    <button onclick="play()">Press Here!</button>
+  -->
 
 
   <p id="counter" class="timer">0</p>
@@ -116,6 +140,9 @@
         <input type="text" id="checkt3" name="checkt3" placeholder="Enter task here..."><br>
     </h2>
 
+
+  
+
   </div>
 
  
@@ -123,7 +150,7 @@
 
 
 
-
+  
 
 
 

@@ -1,80 +1,4 @@
-/*const timer = document.getElementById("timer");
-const modeButtons = document.querySelector("[class=modeSelector]");
-const pomodoroButton = document.getElementById("pomodoroButton");
-const shortButton = document.getElementById("shortButton");
-const longButton = document.getElementById("longButton");
-const mainButton = document.getElementById("toggle");
-let seconds = 0;
 
-const TIMER = {
-  POMODORO: 25,
-  SHORTBREAK: 5,
-  LONGBREAK: 15,
-};
-
-function changeMode(e) {
-  mainButton.classList.replace("fa-stop", "fa-play");
-  mainButton.dataset.paused = "true";
-
-  for (let i = 0; i < 3; i++) {
-    e.path[1].children[i].classList.remove("active");
-  }
-  e.target.classList.add("active");
-
-  let mode = e.target.dataset.mode;
-  timer.dataset.mode = mode;
-
-  if (timer.dataset.mode === "pomodoro") {
-    timer.innerHTML = `${TIMER.POMODORO}:00`;
-  } else if (timer.dataset.mode === "short") {
-    timer.innerHTML = `0${TIMER.SHORTBREAK}:00`;
-  } else {
-    timer.innerHTML = `${TIMER.LONGBREAK}:00`;
-  }
-}
-
-function pomodoro() {
-  function setTimer() {
-    if (timer.dataset.mode === "pomodoro") {
-      seconds = TIMER.POMODORO * 60;
-    } else if (timer.dataset.mode === "short") {
-      seconds = TIMER.SHORTBREAK * 60;
-    } else {
-      seconds = TIMER.LONGBREAK * 60;
-    }
-  }
-
-  if (mainButton.classList.contains("fa-play")) {
-    mainButton.classList.replace("fa-play", "fa-stop");
-    mainButton.dataset.paused = "false";
-
-    setTimer();
-
-    interval = setInterval(() => {
-      let timeRemaining =
-        ("0" + Math.floor(seconds / 60)).slice(-2) +
-        ":" +
-        ("0" + (seconds % 60)).slice(-2);
-      timer.innerHTML = timeRemaining;
-      document.title = `${timeRemaining} - ${
-        timer.dataset.mode === "pomodoro" ? "Work" : "Break"
-      }`;
-
-      if (mainButton.dataset.paused === "true" || seconds === 0) {
-        clearInterval(interval);
-      }
-      seconds--;
-    }, 1000);
-  } else {
-    mainButton.classList.replace("fa-stop", "fa-play");
-    mainButton.dataset.paused = "true";
-  }
-}
-
-mainButton.addEventListener("click", pomodoro);
-modeButtons.addEventListener("click", changeMode);
-
-*/
 var start = document.getElementById('start');
 var stop = document.getElementById('stop');
 var reset = document.getElementById('reset');
@@ -84,15 +8,16 @@ var ws = document.getElementById('w_seconds');
 
 var bm = document.getElementById('b_minutes');
 var bs = document.getElementById('b_seconds');
+var audio = document.getElementById('chatAudio');
 
-//store a reference to a timer variable
+
 var startTimer;
 
 start.addEventListener('click', function(){
     if(startTimer === undefined){
         startTimer = setInterval(timer, 1000)
     } else {
-        alert("Timer is already running");
+        alert("The timer is already running");
     }
 })
 
@@ -114,6 +39,31 @@ stop.addEventListener('click', function(){
 })
 
 
+
+function play(){
+  audio.play()
+  }
+
+
+/*Added ring noise*/
+/*function play() {
+  var audio = new Audio(
+    'https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3');
+  audio.play();
+  if(){
+    audio.pause();
+  }
+  
+}
+*/
+
+
+
+
+
+
+
+
 //Start Timer Function
 function timer(){
     //Work Timer Countdown
@@ -124,17 +74,22 @@ function timer(){
         wm.innerText--;
     }
 
-    //Break Timer Countdown
+    //Break Timer Countdown and Audio
     if(wm.innerText == 0 && ws.innerText == 0){
-        if(bs.innerText != 0){
+    /*  for(){ 
+      play(); 
+      }
+     */ 
+      if(bs.innerText != 0){
             bs.innerText--;
         } else if(bm.innerText != 0 && bs.innerText == 0){
             bs.innerText = 59;
             bm.innerText--;
         }
+        
     }
 
-    //Increment Counter by one if one full cycle is completed
+    //Increment Counter by one if one full session is completed
     if(wm.innerText == 0 && ws.innerText == 0 && bm.innerText == 0 && bs.innerText == 0){
         wm.innerText = 25;
         ws.innerText = "00";
