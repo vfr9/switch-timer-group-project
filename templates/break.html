@@ -82,20 +82,12 @@ grid-area:1 / 3 / 3 / 3;">Break:</p>
 
 
 
-         <div class="break-activity"><h4 style="
-            top:400px">It's break time. Maybe go watch Season {{season}} Episode {{episode}}: {{title}} of Bob's Burgers?<br></h4></div>
-        <div class="break-activity"><h3>
-            <a href={{showurl}}> Click here to see the fandom wiki page for this episode!</a>
-        </h3></div>
-        <div class = "BBimage break-activity">
-            <img src={{image}} alt="Bob's Burgers Characters">
-        </div>
-
+         
 
  <!--<a href="/templates/break.html" class="break-button"> Click here to start break! </a>-->
 
 <div class="green-tile-add-button" style="top: 440px;">
-  <a href= '#'> Break is over! Click here to start next work session!</a> 
+  <a href= 'work'> Break is over! Click here to start next work session!</a> 
   <p> Hurry before 5 minutes are up or else a green tile will be lost! </p> 
   <p> Counter: 5:00 minutes left! </p>
  
@@ -116,8 +108,17 @@ grid-area:1 / 3 / 3 / 3;">Break:</p>
 </div>
 
 <div>
-    <p>Options for what to do during your break: go for a walk, stretch, watch tv, go chat, eat, clickable link to youtube, etc…
+    <p class="break-activity">Options for what to do during your break: go for a walk, stretch, watch tv, go chat, eat, clickable link to youtube, etc…
     </p>
+
+    <div class="break-activity"><h4>It's break time. Maybe go watch Season {{season}} Episode {{episode}}: {{title}} of Bob's Burgers?<br></h4></div>
+    <div class="break-activity"><h3>
+        <a href={{showurl}}> Click here to see the fandom wiki page for this episode!</a>
+    </h3></div>
+    <div class = "BBimage break-activity">
+        <img src={{image}} alt="Bob's Burgers Characters">
+    </div>
+
 </div>
 
 

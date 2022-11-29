@@ -458,7 +458,20 @@ ul {
 
 /*break page styling*/
 .break-activity{
-	top: 850px;
+	background-color: #1c87c9;
+	border: none;
+	color: white;
+	padding: 20px 34px;
+	text-align: center;
+	text-decoration: none;
+	display: inline block;
+	font-size: 20px;
+	margin: 40px 460px;
+	cursor: pointer;
+	border: 2px solid purple;
+	position: relative;
+	top: 550px;
+	
 }
 
 .BBimage img{
