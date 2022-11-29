@@ -456,6 +456,10 @@ ul {
 	transform-origin: bottom left;
   }
 
+.bottom{
+	padding-bottom: 750px;
+}
+
 /*break page styling*/
 .break-activity{
 	background-color: #1c87c9;
@@ -478,8 +482,21 @@ ul {
 	top: 900px;
 }
 
+.boxes-title{
+	background-color: #1c87c9;
+	border: none;
+	color: white;
+	padding: 20px 34px;
+	text-align: center;
+	text-decoration: none;
+	display: inline block;
+	font-size: 20px;
+	margin: 40px 460px;
+	border: 2px solid purple;
+	position: relative;
+	top: 550px;
 	
-
+}
 
 
 
