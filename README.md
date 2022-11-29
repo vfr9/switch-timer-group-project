@@ -1,1 +1,14 @@
-# switch-timer-group-project
+Pull Requests:
+
+
+    Pushed by Sierra, Merged by Vincent:
+        https://github.com/vfr9/switch-timer-group-project/pull/2 
+
+        https://github.com/vfr9/switch-timer-group-project/pull/5
+        
+    Pushed by Vincent, Merged by Sierra:
+        https://github.com/vfr9/switch-timer-group-project/pull/1
+
+        https://github.com/vfr9/switch-timer-group-project/pull/3
+
+

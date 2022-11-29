@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static',filename='break_style.css') }}" type"text/css">
+        <title>Break Time</title>
+    </head>
+    <body>
+        <div class = "header">
+            <h1>Break Time</h1>
+         </div>
+         <div><h4>It's break time. Maybe go watch Season {{season}} Episode {{episode}}: {{title}} of Bob's Burgers?<br></h4></div>
+        <div><h3>
+            <a href={{showurl}}> Click here to see the fandom wiki page for this episode!</a>
+        </h3></div>
+        <div class = "BBimage">
+            <img src={{image}} alt="Bob's Burgers Characters">
+        </div>
+
+        <footer class = "footer">
+            <h2>&copy; Copyright Switch Timer</h2>
+         </footer>
+    </body>
+</html>
