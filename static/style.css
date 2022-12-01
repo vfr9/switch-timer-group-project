@@ -29,12 +29,12 @@ body {
 
 .header{
 	background-color:navy;
-	position: static;
+	position: fixed;
 	top: 0px;
 	width: 100%;
 	color: white;
 	text-align: center;
-	height: 7vh;
+	height: auto;
 	padding: 10px;
 }
 
@@ -57,31 +57,20 @@ body {
 	padding: 10px;
 }
 
-  
-  .mainContainer {
-	height: 100vh;
+.mainContainer {
+	height: 50vh;
 	font-family: helvetica;
 	position: static;
   }
+ 
   
   .container {
 	font-family: helvetica;
-	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	top: 00;
 	width: 100%;
 	height: 50%;
-  }
-  
-  .title {
-	position: absolute;
-	top: 10px;
-	text-align: center;
-	color: var(--title);
-	font-size: 10vw;
-	text-align: center;
   }
   
   .glass {
@@ -150,15 +139,10 @@ body {
   /* responsiveness */
   
   @media (max-width: 700px) {
-	.title {
-	  top: 15px;
-	  font-size: 20vw;
-	}
-  
 	.glass {
-	  padding-top: 30px;
-	  padding-bottom: 30px;
-	}
+		padding-top: 30px;
+		padding-bottom: 30px;
+	  }
   
 	.modeSelector {
 	  display: flex;
@@ -214,7 +198,7 @@ body {
 	margin: auto;
     border: 2px solid purple;
 	position: relative;
-	top: 550px;
+	top: 400px;
 	
 }
 
@@ -235,25 +219,25 @@ body {
 }
 
 
+
+
 .green-tile-add-button{
-		background-color: #1c87c9;
-		border: none;
-		color: white;
-		padding: 20px 34px;
-		text-align: center;
-		text-decoration: none;
-		display: inline block;
-		font-size: 20px;
-	    margin: 40px 460px;
-		cursor: pointer;
-		border-radius: 50%;
-		border: 2px solid purple;
-		position: relative;
-		
+	background-color: #1c87c9;
+	border: none;
+	color: white;
+	padding: 20px 34px;
+	text-align: center;
+	text-decoration: none;
+	display: inline block;
+	font-size: 20px;
+	margin: 40px 460px;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 2px solid purple;
+	position: relative;
+	
 
-	}
-
-
+}
 
 
 	h1 {
@@ -359,7 +343,6 @@ body {
 		align-self: center;
 		justify-self: center;
 		font-size: 20px;
-		
 		box-shadow: 0px 0px 0px 2px #9fb4f2;
 		background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
 		background-color:#7892c2;
@@ -378,11 +361,6 @@ body {
 	background-color:#476e9e;
 }
 
-        
-.btn:active {
-	position:relative;
-	top:1px;
-}
 
 .ButtonContainer {
     display: block;
@@ -418,7 +396,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: auto;
-	background-color: navy;
+	background-color: navy;*/
   }
   
   li {
@@ -437,6 +415,9 @@ ul {
 	background-color: #111;
   }
   
+  .active {
+	/*background-color: #04AA6D;*/
+  }
   li {
 	border-right: 1px solid #bbb;
   }
@@ -528,7 +509,12 @@ ul {
 	align-items: center;
 }
 
-
-
-
-	
+/*Green Checkmark*/
+.checkmark{
+	color:green;
+	font-size:larger;
+  }
+  
+  
+  
+ 
