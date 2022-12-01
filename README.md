@@ -32,7 +32,7 @@ Things we didn't enjoy or things we wanted to learn from this Project:
 Technical Requirements:
     -We ran the website using a Flask Server.
     -We used a REST API to pull information about the show Bob's Burgers on the break page of the site.
-    -We used a React frontend in order to make the site look better.
+    -We used PostgreSQL database to store user inputs and use that information elseware in the site
     -We Beautified the site in order to make it presentable to any users.
     
 Streatch Features:

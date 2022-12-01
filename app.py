@@ -1,7 +1,4 @@
-import os
 from random import randrange
-import json
-from dotenv import load_dotenv, find_dotenv
 import requests
 from flask import Flask, render_template, request
 import random
@@ -40,8 +37,6 @@ class Event(db.Model):
 
 
 
-
-load_dotenv(find_dotenv())  # This is to load your API keys from .env
 
 @app.route("/break")
 def break_screen():
