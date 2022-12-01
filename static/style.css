@@ -29,7 +29,7 @@ body {
 
 .header{
 	background-color:navy;
-	position: fixed;
+	position: static;
 	top: 0px;
 	width: 100%;
 	color: white;
@@ -61,6 +61,7 @@ body {
   .mainContainer {
 	height: 100vh;
 	font-family: helvetica;
+	position: static;
   }
   
   .container {
@@ -204,7 +205,7 @@ body {
 
 
 .square-background{
-	height: 500px;
+	height: 180px;
 	width: 500px;
 	background-color:lightblue;
 	text-align: center;
@@ -213,7 +214,7 @@ body {
 	margin: auto;
     border: 2px solid purple;
 	position: relative;
-	top: 400px;
+	top: 550px;
 	
 }
 
@@ -338,6 +339,11 @@ body {
 		width: 100px;
 	}
 
+	#link {
+		grid-area: 3 / 3 / 3 / 3;
+		width: 100px;
+	}
+
 	#begin-app{
 		grid-area: 3 ;
 		width: 700px;
@@ -398,6 +404,12 @@ body {
     line-height: 1.5;
 }
 
+.linkbutton{
+	margin: 10px 10px;
+	justify-content: center;
+	display: flex;
+}
+
 
 
 /*Navigation Bar*/
@@ -425,12 +437,12 @@ ul {
 	background-color: #111;
   }
   
-  .active {
-	/*background-color: #04AA6D;*/
-  }
   li {
 	border-right: 1px solid #bbb;
   }
+
+  #menu li { padding: 0px; }
+  #menu li a { margin: 0px; display: block; width: 100%; height: 100%; }
   
 /*Adds Underline Effect*/
 .hover-underline-animation {
@@ -472,7 +484,7 @@ ul {
 	display: inline block;
 	font-size: 20px;
 	margin: 40px 460px;
-	cursor: pointer;
+	cursor: auto;
 	border: 2px solid purple;
 	position: relative;
 	top: 550px;
@@ -494,9 +506,26 @@ ul {
 	font-size: 20px;
 	margin: 40px 460px;
 	border: 2px solid purple;
-	position: relative;
-	top: 550px;
-	
+	position: static;
+}
+
+.links{
+	background-color: #1c87c9;
+	border: none;
+	color: white;
+	padding: 20px 34px;
+	text-align: center;
+	text-decoration: none;
+	display: flex;
+	font-size: 20px;
+	margin: 40px 460px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 36%;
+	border: 2px solid purple;
+	position: absolute;
+	top: 300px;
+	align-items: center;
 }
 
 
