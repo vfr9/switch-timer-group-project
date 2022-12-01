@@ -137,11 +137,10 @@ body {
   /* responsiveness */
   
   @media (max-width: 700px) {
-  
 	.glass {
-	  padding-top: 30px;
-	  padding-bottom: 30px;
-	}
+		padding-top: 30px;
+		padding-bottom: 30px;
+	  }
   
 	.modeSelector {
 	  display: flex;
@@ -197,7 +196,7 @@ body {
 	margin: auto;
     border: 2px solid purple;
 	position: relative;
-	top: 400px;
+	top: 100px;
 	
 }
 
@@ -218,25 +217,25 @@ body {
 }
 
 
+
+
 .green-tile-add-button{
-		background-color: #1c87c9;
-		border: none;
-		color: white;
-		padding: 20px 34px;
-		text-align: center;
-		text-decoration: none;
-		display: inline block;
-		font-size: 20px;
-	    margin: 40px 460px;
-		cursor: pointer;
-		border-radius: 50%;
-		border: 2px solid purple;
-		position: relative;
-		
+	background-color: #1c87c9;
+	border: none;
+	color: white;
+	padding: 20px 34px;
+	text-align: center;
+	text-decoration: none;
+	display: inline block;
+	font-size: 20px;
+	margin: 40px 460px;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 2px solid purple;
+	position: relative;
+	
 
-	}
-
-
+}
 
 
 	h1 {
@@ -337,7 +336,6 @@ body {
 		align-self: center;
 		justify-self: center;
 		font-size: 20px;
-		
 		box-shadow: 0px 0px 0px 2px #9fb4f2;
 		background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
 		background-color:#7892c2;
@@ -385,7 +383,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: auto;
-	/*background-color: navy;*/
+	background-color: navy;*/
   }
   
   li {
@@ -404,9 +402,7 @@ ul {
 	background-color: #111;
   }
   
-  .active {
-	/*background-color: #04AA6D;*/
-  }
+
   li {
 	border-right: 1px solid #bbb;
   }
@@ -478,7 +474,11 @@ ul {
 	
 }
 
-
+/*Green Checkmark*/
+.checkmark{
+	color:green;
+	font-size:larger;
+  }
   
   
   
