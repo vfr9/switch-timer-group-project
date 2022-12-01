@@ -232,7 +232,7 @@ body {
 	cursor: pointer;
 	border-radius: 50%;
 	border: 2px solid purple;
-	position: relative;
+	
 	
 
 }
@@ -301,7 +301,7 @@ body {
 	}
 	
 	#break-timer {
-		grid-area: 2 / 4 / 2 / 4;
+		grid-area: 2 / 3 / 2 / 4;
 	}
 	
 
@@ -450,7 +450,7 @@ ul {
 	cursor: pointer;
 	border: 2px solid purple;
 	position: relative;
-	top: 550px;
+	
 	
 }
 

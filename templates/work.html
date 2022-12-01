@@ -24,8 +24,9 @@
   <ul>
     
   <h1 style="float:left;"> Productivity Switch Timer </h1> 
+  
+  <li><a href="break" title="Break"><span>Break Suggestions</span></a></li>
   <li><a href="work" title="Work"><span>Work</span></a></li>
-  <li><a href="break" title="Break"><span>Break</span></a></li>
   <li><a href="/" title="Home"><span>Home</span></a></li>
   </ul>
 
@@ -48,6 +49,12 @@
    
  <div id="container" class="timer" id="timer" data-mode="pomodoro">
   <p id="work" class="label modeSelector__Button active">Work:</p>
+  <p id="break" class="label modeSelector__Button active" style="
+grid-area:1 / 3 / 2 / 3;">Break:</p>
+   <!--Break Timer-->
+   <div id="break-timer" class="timer">
+    <p id="b_minutes">5</p><p class="semicolon">:</p><p id="b_seconds">00</p>
+</div>
   <p id="cycles" class="label modeSelector__Button active">Session:</p>
 
 
@@ -57,7 +64,7 @@
 
   <!--Work Timer-->
   <div id="work-timer" class="timer">
-      <p id="w_minutes">25</p><p class="semicolon">:</p><p id="w_seconds">00</p>
+      <p id="w_minutes">00</p><p class="semicolon">:</p><p id="w_seconds">02</p>
   </div>
 
 
