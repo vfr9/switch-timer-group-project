@@ -1,14 +1,9 @@
-import os
 from random import randrange
-import json
-from dotenv import load_dotenv, find_dotenv
 import requests
 import flask
 import random
 
 app = flask.Flask(__name__)  # name is the module name
-
-load_dotenv(find_dotenv())  # This is to load your API keys from .env
 
 @app.route("/break")
 def break_screen():
