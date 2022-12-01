@@ -27,10 +27,10 @@ body {
 }
 
 
-.header,
-.footer {
+.header{
 	background-color:navy;
-	position: absolute;
+	position: fixed;
+	top: 0px;
 	width: 100%;
 	color: white;
 	text-align: center;
@@ -54,6 +54,7 @@ body {
 	background-color: navy;
 	color: white;
 	text-align: center;
+	padding: 10px;
 }
 
   
