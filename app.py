@@ -2,14 +2,16 @@ from random import randrange
 import requests
 from flask import Flask, render_template, request
 import random
+import json
+from dotenv import load_dotenv, find_dotenv
 from flask_sqlalchemy import SQLAlchemy
 
 
 app=Flask(__name__)  # name is the module name, it is where the app should start running
 
+load_dotenv(find_dotenv())  # This is to load your API keys from .env
 
-
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:sL74217513@localhost/tim'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:PASSWORD@localhost/timer'
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.secret_key = 'secret string'
 
@@ -23,8 +25,8 @@ class Event(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     activity = db.Column(db.String(80), unique=True, nullable=False)
 
-    #def __repr__(self): # this will give it a string representation of itself
-     #   return f'Event: {self.activity}' # this f string allows you to inject python variables
+    def __repr__(self): # this will give it a string representation of itself
+       return f'Event: {self.activity}' # this f string allows you to inject python variables
 
     def __init__(self, activity):
         self.activity= activity
@@ -91,9 +93,6 @@ def addperson():
 def personadd():
     activity = request.form["activity"]
     entry = Event(activity)
-#   db.session.add(entry)
-#    db.session.commit()
-
     return render_template("index.html")
 
 
