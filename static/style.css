@@ -1,7 +1,3 @@
-
-
-
-
 * {
 	margin: 0;
 	padding: 0;
@@ -29,8 +25,7 @@ body {
 
 .header{
 	background-color:navy;
-	position: static;
-	top: 0px;
+	position: relative;
 	width: 100%;
 	color: white;
 	text-align: center;
@@ -60,7 +55,6 @@ body {
 .mainContainer {
 	height: 50vh;
 	font-family: helvetica;
-	position: static;
   }
  
   
@@ -139,10 +133,11 @@ body {
   /* responsiveness */
   
   @media (max-width: 700px) {
+  
 	.glass {
-		padding-top: 30px;
-		padding-bottom: 30px;
-	  }
+	  padding-top: 30px;
+	  padding-bottom: 30px;
+	}
   
 	.modeSelector {
 	  display: flex;
@@ -189,7 +184,7 @@ body {
 
 
 .square-background{
-	height: 480px;
+	height: 500px;
 	width: 500px;
 	background-color:lightblue;
 	text-align: center;
@@ -198,7 +193,7 @@ body {
 	margin: auto;
     border: 2px solid purple;
 	position: relative;
-	top: 100px;
+	top: 400px;
 	
 }
 
@@ -219,25 +214,25 @@ body {
 }
 
 
-
-
 .green-tile-add-button{
-	background-color: #1c87c9;
-	border: none;
-	color: white;
-	padding: 20px 34px;
-	text-align: center;
-	text-decoration: none;
-	display: inline block;
-	font-size: 20px;
-	margin: 40px 460px;
-	cursor: pointer;
-	border-radius: 50%;
-	border: 2px solid purple;
-	
-	
+		background-color: #1c87c9;
+		border: none;
+		color: white;
+		padding: 20px 34px;
+		text-align: center;
+		text-decoration: none;
+		display: inline block;
+		font-size: 20px;
+	    margin: 40px 460px;
+		cursor: pointer;
+		border-radius: 50%;
+		border: 2px solid purple;
+		position: relative;
+		
 
-}
+	}
+
+
 
 
 	h1 {
@@ -303,7 +298,7 @@ body {
 	}
 	
 	#break-timer {
-		grid-area: 2 / 3 / 2 / 4;
+		grid-area: 2 / 4 / 2 / 4;
 	}
 	
 
@@ -323,11 +318,6 @@ body {
 		width: 100px;
 	}
 
-	#link {
-		grid-area: 3 / 3 / 3 / 3;
-		width: 100px;
-	}
-
 	#begin-app{
 		grid-area: 3 ;
 		width: 700px;
@@ -343,6 +333,7 @@ body {
 		align-self: center;
 		justify-self: center;
 		font-size: 20px;
+		
 		box-shadow: 0px 0px 0px 2px #9fb4f2;
 		background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
 		background-color:#7892c2;
@@ -382,12 +373,6 @@ body {
     line-height: 1.5;
 }
 
-.linkbutton{
-	margin: 10px 10px;
-	justify-content: center;
-	display: flex;
-}
-
 
 
 /*Navigation Bar*/
@@ -396,7 +381,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: auto;
-	background-color: navy;
+	/*background-color: navy;*/
   }
   
   li {
@@ -421,9 +406,6 @@ ul {
   li {
 	border-right: 1px solid #bbb;
   }
-
-  #menu li { padding: 0px; }
-  #menu li a { margin: 0px; display: block; width: 100%; height: 100%; }
   
 /*Adds Underline Effect*/
 .hover-underline-animation {
@@ -465,13 +447,11 @@ ul {
 	display: inline block;
 	font-size: 20px;
 	margin: 40px 460px;
-	cursor: auto;
+	cursor: pointer;
 	border: 2px solid purple;
 	position: relative;
-	top: 550px;
 	
 }
-
 .BBimage img{
 	top: 900px;
 }
@@ -487,34 +467,12 @@ ul {
 	font-size: 20px;
 	margin: 40px 460px;
 	border: 2px solid purple;
-	position: static;
+
+	
+	
 }
 
-.links{
-	background-color: #1c87c9;
-	border: none;
-	color: white;
-	padding: 20px 34px;
-	text-align: center;
-	text-decoration: none;
-	display: flex;
-	font-size: 20px;
-	margin: 40px 460px;
-	margin-left: auto;
-	margin-right: auto;
-	left: 36%;
-	border: 2px solid purple;
-	position: absolute;
-	top: 300px;
-	align-items: center;
-}
-
-/*Green Checkmark*/
 .checkmark{
 	color:green;
-	font-size:larger;
-  }
-  
-  
-  
- 
+	font-size: larger;
+}
