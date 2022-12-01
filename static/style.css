@@ -29,12 +29,11 @@ body {
 
 .header{
 	background-color:navy;
-	position: fixed;
-	top: 0px;
+	position: relative;
 	width: 100%;
 	color: white;
 	text-align: center;
-	height: 7vh;
+	height: auto;
 	padding: 10px;
 }
 
@@ -57,30 +56,19 @@ body {
 	padding: 10px;
 }
 
-  
-  .mainContainer {
-	height: 100vh;
+.mainContainer {
+	height: 50vh;
 	font-family: helvetica;
   }
+ 
   
   .container {
 	font-family: helvetica;
-	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	top: 00;
 	width: 100%;
 	height: 50%;
-  }
-  
-  .title {
-	position: absolute;
-	top: 10px;
-	text-align: center;
-	color: var(--title);
-	font-size: 10vw;
-	text-align: center;
   }
   
   .glass {
@@ -149,10 +137,6 @@ body {
   /* responsiveness */
   
   @media (max-width: 700px) {
-	.title {
-	  top: 15px;
-	  font-size: 20vw;
-	}
   
 	.glass {
 	  padding-top: 30px;
@@ -372,11 +356,6 @@ body {
 	background-color:#476e9e;
 }
 
-        
-.btn:active {
-	position:relative;
-	top:1px;
-}
 
 .ButtonContainer {
     display: block;
@@ -406,7 +385,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: auto;
-	background-color: navy;
+	/*background-color: navy;*/
   }
   
   li {
@@ -500,6 +479,7 @@ ul {
 }
 
 
-
-
-	
+  
+  
+  
+ 
